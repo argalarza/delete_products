@@ -80,7 +80,7 @@ jobs:
           EOF
 
           # Detener contenedores existentes de forma segura
-          echo "🛑 Deteniendo contenedores antiguos..."
+          echo "🛑 Deteniendo contenedores antiguos...."
           if sudo docker ps | grep -q delete-products-service; then
             sudo docker-compose -f docker-compose.yml down --remove-orphans
           fi
